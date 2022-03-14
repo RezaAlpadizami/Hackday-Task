@@ -1,0 +1,36 @@
+GET  http://localhost:3001/product
+
+###
+GET  http://localhost:3001/product/4
+
+
+###
+POST  http://localhost:3001/product
+Content-Type: application/json
+
+{
+"title": "Headset Baju",
+"price": 2000
+}
+
+###
+PATCH   http://localhost:3001/product/1
+Content-Type: application/json
+
+{
+"title": "Product Updated Again",
+"price": 7000
+}
+
+###
+DELETE    http://localhost:3001/product/2
+
+###
+POST  http://localhost:3001/users/register
+Content-Type: application/json
+
+{
+"nama": "Andre",
+"email": "andre@gmail.com",
+"password": "12345"
+}
